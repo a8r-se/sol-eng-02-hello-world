@@ -1,11 +1,11 @@
----
 apiVersion: x.getambassador.io/v3alpha1
 kind: AmbassadorMapping
 metadata:
   name: hello
   namespace: test
 spec:
-  prefix: /hello/
   hostname: emojivoto.se02.mturner.k736.net
+  precedence: 1
+  prefix: /
   service: hello.test:80
----
+
